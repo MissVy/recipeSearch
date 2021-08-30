@@ -1,0 +1,183 @@
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+
+.app-recipe {
+  background-color: #f6ffee;
+  /* background-image:url('https://s3.amazonaws.com/enterprise-multitenant.3scale.net.3scale.net/edamam/2018/05/13/bgr-w-373dbdef758b52fc.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRYLTWBQ37ZNGBZA%2F20210828%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210828T000830Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=68998a7b36b6ed8ea07a97e88cfaae96b59134ed9d2df51e018278db4466ad1c'); */
+  background-repeat: no-repeat;
+  height: 300px;
+  background-size: cover;
+  font-family: -webkit-pictograph;
+  height: 100vh;
+  position: relative;
+}
+
+
+.center-aligned {
+  text-align: center;
+}
+
+.search-form {
+  text-align: center;
+  margin: 40px 0;
+}
+
+
+h1.center-aligned {
+  margin: 0;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  color: #057ea3;
+}
+
+input.search-bar {
+  box-shadow: none;
+  border: 0;
+  height: 45px;
+  border-radius: 5px 0 0 5px;
+  width: 80%;
+  font-size: 20px;
+  padding: 10px 20px;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+input.search-bar:focus-visible {
+  outline: 0;
+  background: white;
+}
+
+.search-button {
+  min-width: 50px;
+  height: 65px;
+  justify-content: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: #284b3b;
+  border: 0;
+  color: white;
+  padding: 15px 20px;
+  line-height: 10px;
+}
+
+.search-button:hover {
+  background-color: #132e22;
+}
+
+.recipe-output {
+  background-image: linear-gradient(to top, #16345b -10%, #f6ffee 100%);
+  float: left;
+  padding: 40px 5%;
+  width: calc(100% - 10%);
+}
+
+.none {
+  display: none;
+}
+
+.display {
+  display: block;
+}
+
+.wrap {
+  /* padding: 20px; */
+  float: left;
+  width: calc(100% - 40px);
+  padding: 20px;
+  /* background-color: #f7f9f4; */
+}
+
+.recipe-item {
+  width: calc(100%/5 - 20px);
+  justify-content: center;
+  float: left;
+  margin: 10px;
+  height: 450px;
+  background-color: white;
+  position: relative;
+  border-radius: 0 0 5px 5px;
+}
+
+.recipe-item img {
+  float: left;
+  width: 100%;
+}
+
+.recipe-item p {
+  color: #888888;
+  font-size: 12px;
+}
+
+
+.ingredients {
+    background-color: #5693e3;
+    float: left;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    border-radius: 0 0 5px 5px;
+}
+
+.recipe-item a {
+  color: green;
+  text-decoration: none;
+}
+
+.ingredients .review-ingredients {
+    text-align: center;
+    width: 100%;
+    float: left;
+    justify-content: center;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+
+.ingredients:hover .card {
+  display: block;
+}
+
+.ingredients .card {
+    display: none;
+    position: absolute;
+    top: -410px;
+    float: left;
+    height: 410px;
+    background: #eff3eb;
+    padding: 20px;
+    width: calc(100% - 40px);
+    box-shadow: 1px 1px 8px #7f8c8b;
+}
+
+
+.card-header {
+  padding: 0 0 20px 0;
+}
+
+.icon {
+  position: absolute;
+  background: #00be7e;
+  font-size: 20px;
+  border-radius: 50px;
+  padding: 5px;
+  top: -10px;
+  left: -10px;
+}
+
+
+.ingredients .card li {
+  font-size: 10px;
+}

@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: #76c8e8; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',  monospace;
+}
+
+.app {
+  display: flex;
+  justify-content: space-around;
+}
+
+.center-aligned {
+  justify-content: center;
+  text-align: center;
+}
+
+
+.tweet {
+  background-color: #f8fdff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 15px;
+  width: 300px;
+  height: 200px;
+  flex-direction: column;
+  justify-content: space-around;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+
+.tweet p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 85px;
+  overflow: hidden;
+  font-size: 12px;
+  display: block;
+  float: left;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  width: 100%;
+}
+
+
+.checkbox-list {
+  background-color: white;
+  margin: 100px auto;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #efefef;
+  box-shadow:
+  /* The top layer shadow */
+      0 1px 1px rgba(0,0,0,0.15),
+          /* The second layer */
+      0 10px 0 -5px #eee,
+          /* The second layer shadow */
+      0 10px 1px -4px rgba(0,0,0,0.15),
+          /* The third layer */
+      0 20px 0 -10px #eee,
+          /* The third layer shadow */
+      0 20px 1px -9px rgba(0,0,0,0.15);
+  padding: 30px;
+}
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: blue;
+}
+
+
+.todo-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 70%;
+    border-bottom: 1px solid #cecece;
+    font-family: Roboto, sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    color: #333333;
+}
+
+input[type=checkbox] {
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+input[type=checkbox]:checked:before {
+  text-decoration: line-through;
+  color: red;
+}
+
+.checked {
+  color: red;
+  text-decoration: line-through;
+}
